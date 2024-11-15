@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 struct ImageView: View {
@@ -10,7 +9,7 @@ struct ImageView: View {
         VStack {
             Text(title)
                 .font(.subheadline)
-                .foregroundColor(.white)
+                .foregroundColor(.primary)
             
             if isLoading {
                 ProgressView()

@@ -1,10 +1,10 @@
-
+// CaptureView.swift
 import SwiftUI
 
 struct CaptureView: View {
-    @Environment(\.presentationMode) var presentationMode
     @StateObject private var viewModel = SummaryViewModel()
     @State private var showingImagePicker = false
+    @State private var isNavigatingToSummary = false
     
     var body: some View {
         VStack {
@@ -23,7 +23,7 @@ struct CaptureView: View {
             }
             .padding()
             
-            if viewModel.beforeImage != nil {
+            if viewModel.isProcessing {
                 Text("Processing...")
                     .padding()
             }
@@ -36,12 +36,12 @@ struct CaptureView: View {
                 viewModel.processImage(image)
             }
         }
-        .onChange(of: viewModel.afterImage) { _ in
-            if viewModel.afterImage != nil {
-                presentationMode.wrappedValue.dismiss()
+        .onChange(of: viewModel.afterImage) { newImage in
+            if newImage != nil {
+                isNavigatingToSummary = true
             }
         }
-        .navigationDestination(isPresented: .constant(viewModel.afterImage != nil)) {
+        .navigationDestination(isPresented: $isNavigatingToSummary) {
             SummaryView(viewModel: viewModel)
         }
     }

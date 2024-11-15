@@ -6,12 +6,26 @@ struct ImagePickerView: UIViewControllerRepresentable {
     @Binding var selectedImage: UIImage?
     @Environment(\.presentationMode) var presentationMode
     
+    
     func makeUIViewController(context: Context) -> UIImagePickerController {
         let picker = UIImagePickerController()
         picker.sourceType = sourceType
         picker.delegate = context.coordinator
         return picker
     }
+//    func makeUIViewController(context: Context) -> UIImagePickerController {
+//        let picker = UIImagePickerController()
+//        picker.sourceType = sourceType
+//        picker.delegate = context.coordinator
+//        
+//        // Set the camera device to back
+//        if sourceType == .camera {
+//            picker.cameraDevice = .rear
+//        }
+//        
+//        return picker
+//    }
+
     
     func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {}
     
