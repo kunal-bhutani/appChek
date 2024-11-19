@@ -2,12 +2,14 @@ import Foundation
 
 @MainActor
 class ImageTransformViewModel: ObservableObject {
-    private let apiKey = "Bearer key-9YQGW94MhOdVrzAuaLaYIQTIP5AeJse50PATVLR7EY0xn19p33vS7p16eaVeTHRk5aIqOiLGq5hiakbiSENaaqxkbgHp64I"  // Replace with your actual API key
+    private let apiKey = "Bearer 9YQGW94MhOdVrzAuaLaYIQTIP5AeJse50PATVLR7EY0xn19p33vS7p16eaVeTHRk5aIqOiLGq5hiakbiSENaaqxkbgHp64I"  // Replace with your actual API key
     
     func transformImage(originalImage: String, maskImage: String) async throws -> String {
         let parameters = ImageTransformParameters(
-            prompt: "enhance photo quality",
-            negativePrompt: "blur, distortion",
+//            prompt: "enhance photo quality",
+//            negativePrompt: "blur, distortion",
+            prompt: "lose 5 kg and gain 8 kg muscle",
+            negativePrompt: "clothes,cartoon,disfigured,blurry,nude",
             image: originalImage,
             maskImage: maskImage,
             model: "realistic-vision-v5-1-inpainting",  // Update with your actual model name

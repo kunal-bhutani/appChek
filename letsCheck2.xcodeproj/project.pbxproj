@@ -10,9 +10,22 @@
 		52FD28302CE5D2F5008D791D /* letsCheck2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = letsCheck2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		52FD286C2CE7DB37008D791D /* Exceptions for "letsCheck2" folder in "letsCheck2" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 52FD280C2CE561D4008D791D /* letsCheck2 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		52FD280F2CE561D4008D791D /* letsCheck2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				52FD286C2CE7DB37008D791D /* Exceptions for "letsCheck2" folder in "letsCheck2" target */,
+			);
 			path = letsCheck2;
 			sourceTree = "<group>";
 		};
@@ -247,6 +260,7 @@
 				DEVELOPMENT_TEAM = QZVJJUS4FZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = letsCheck2/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to the camera to capture photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -254,6 +268,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -278,6 +293,7 @@
 				DEVELOPMENT_TEAM = QZVJJUS4FZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = letsCheck2/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to the camera to capture photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -285,6 +301,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
